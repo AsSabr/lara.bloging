@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1196e466-6a10-46cd-bc3e-df7a8419aa25" name="Default Changelist" comment="" />
+    <list default="true" id="1196e466-6a10-46cd-bc3e-df7a8419aa25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Permission.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Role.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/laratrust.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/laratrust_seeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_25_202133_laratrust_setup_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/LaratrustSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lara.bloging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lara.bloging.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +27,9 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -115,14 +135,22 @@
       <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/kkszymanowski/traitor" />
+      <path value="$PROJECT_DIR$/vendor/santigarcor/laratrust" />
     </include_path>
   </component>
   <component name="ProjectId" id="1gbNzV5INNKI8GI0QnerAzHvD9F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
@@ -148,18 +176,33 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598379594334</updated>
-      <workItem from="1598379595362" duration="5332000" />
+      <workItem from="1598379595362" duration="7574000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="771" y="400" key="#Composer" timestamp="1598379695041">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="771" y="400" key="#Composer/0.0.1920.1040@0.0.1920.1040" timestamp="1598379695041" />
+    <state x="553" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598387130364">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="553" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598387130364" />
+    <state x="830" y="418" key="Github.ShareDialog" timestamp="1598385564115">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="830" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598385564115" />
+    <state x="730" y="223" key="Github.UntrackedFilesDialog" timestamp="1598385587001">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="730" y="223" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598385587001" />
     <state width="1878" height="282" key="GridCell.Tab.0.bottom" timestamp="1598379999967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -180,5 +223,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="795" y="444" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1598380185157" />
+    <state x="553" y="253" key="Vcs.Push.Dialog.v2" timestamp="1598385611450">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="553" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1598385611450" />
   </component>
 </project>
