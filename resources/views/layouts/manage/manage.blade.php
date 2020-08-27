@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>{{ config('app.name')}} - @yield('title')</title>
+    <title>Dashboard &#9900; @yield('title')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="This is an example dashboard created using build-in elements and components.">
     <meta name="msapplication-tap-highlight" content="no">
@@ -28,17 +28,28 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
-    @stack('stylesheets')
+    @yield('stylesheets')
 </head>
 <body>
     <div id="app">
-        <main class="py-4">
-            @yield('content')
-        </main>
+        <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+            @include('layouts.manage._inc.appHeader')
+            <div class="app-main">
+                @include('layouts.manage._inc.sidebar')
+                <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        @include('layouts.manage._inc.pageTitle')
+                        @yield('content')
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/dashboard.js') }}"></script>
-    @stack('scripts')
+    @yield('scripts')
 </body>
 </html>

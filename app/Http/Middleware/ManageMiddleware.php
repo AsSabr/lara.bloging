@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\User;
 use Closure;
 use Illuminate\Support\Facades\Auth;
 
@@ -16,7 +17,7 @@ class ManageMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (Auth::user()->isAdmin){
+        if (!User::whereRoleIs(['superadmin', 'admin'])){
             return redirect()->route('index')->with('error', 'You don not access to this page!');
         }
         return $next($request);

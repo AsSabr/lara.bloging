@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name')}} &#9900; @yield('title')</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -72,6 +72,7 @@
 
         <main class="py-4">
             @yield('content')
+            <example-component></example-component>
         </main>
     </div>
     <!-- Scripts -->

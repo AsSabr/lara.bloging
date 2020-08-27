@@ -13,22 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');
 
 // Admin
 Route::group([
     'prefix' => 'manage',
     'namespace' => 'Manage',
-//    'middleware' => ['auth', 'isAdmin'],
+    'middleware' =>  ['auth', 'role:superadmin|admin'],
     'as' => 'manage.',
 ], function () {
     Route::get('/', 'IndexController@index')->name('index');
+    Route::resource('/users', 'UserController');
 });
 
 // Pages
